@@ -11,12 +11,14 @@ class IceCreamAdmin(admin.ModelAdmin):
         'description',
         'is_published',
         'is_on_main',
+        'output_order',
         'category',
         'wrapper'
     )
     list_editable = (
         'is_published',
         'is_on_main',
+        'output_order',
         'category'
     )
     search_fields = ('title',)
